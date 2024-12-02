@@ -1,0 +1,83 @@
+body{
+	background-color:#85A98F;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.saat{
+	border:5px solid black;
+	border-radius:50%;
+	width:300px;
+	height:300px;
+	background-color:#fff;
+	margin-bottom:50vh;
+	position:relative;
+}
+
+.saat .clock{
+	position:absolute;
+	width:100%;
+	height:100%;
+	text-align:center;
+	--rotation:0;
+	transform:rotate(var(--rotation));
+}
+
+.saat .clock-1{--rotation:30deg}
+.saat .clock-2{--rotation:60deg}
+.saat .clock-3{--rotation:90deg}
+.saat .clock-4{--rotation:120deg}
+.saat .clock-5{--rotation:150deg}
+.saat .clock-6{--rotation:180deg}
+.saat .clock-7{--rotation:210deg}
+.saat .clock-8{--rotation:240deg}
+.saat .clock-9{--rotation:270deg}
+.saat .clock-10{--rotation:300deg}
+.saat .clock-11{--rotation:330deg}
+.saat .clock-12{--rotation:360deg}
+
+.saat .hand.hour{
+	width:3px;
+	height:90px;
+	background-color:black;
+	--rotation:300deg;
+	border-top-right-radius:50%;
+	border-top-left-radius:50%;
+}
+.saat .hand.minut{
+	width:3px;
+	height:110px;
+	background-color:black;
+	--rotation:60deg;
+	border-top-right-radius:50%;
+	border-top-left-radius:50%;
+}
+.saat .hand.secend{
+	width:3px;
+	height:130px;
+	background-color:red;
+	--rotation:130deg;
+	border-top-right-radius:50%;
+	border-top-left-radius:50%;
+}
+
+.saat .hand{
+	position:absolute;
+	left:50%;
+	bottom:50%;
+	--rotation:0;
+	transform:rotate(var(--rotation));
+	transform-origin:bottom
+}
+
+.saat .center{
+	width:30px;
+	height:30px;
+	background-color:black;
+	position:absolute;
+	left:50%;
+	bottom:50%;
+	border-radius:50%;
+	    transform: translate(-13px, 9px);
+}
